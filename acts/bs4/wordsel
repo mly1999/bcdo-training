@@ -1,0 +1,9 @@
+#!/bin/bash
+
+start=$1
+end=${2}-${1}+1
+
+while read line; do
+    arrayofwords=($line)
+    echo ${arrayofwords[@]:${start}:${end}}
+done

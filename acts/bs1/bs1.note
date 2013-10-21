@@ -1,0 +1,5 @@
+Notes
+ ~ Current system is a mac os x with a bash version 3.2.48
+ ~ Latest existing bash version found on the internet (http://ftp.gnu.org/gnu/bash/) is version 4.2
+ ~ A quick comparison of the bash man for the mac version vs ubuntu (bash 4), notice additional global vars that come included with the newer version.
+

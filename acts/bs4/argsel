@@ -1,0 +1,24 @@
+#!/bin/bash
+
+function checkforerror {
+    if [ $# -lt 1 ]; then
+        echo "No argurments." >&2; exit 1
+    fi
+
+    if [ $1 -eq $1 ] 2>/dev/null; then
+        echo "Is number" >/dev/null
+    else
+        echo "First argument not a number." >&2; exit 1
+    fi
+
+    if [ $1 -ge $# ]; then 
+	echo "Position out of bount." >&2; exit 1
+    fi
+}
+
+checkforerror $@
+
+pos=$1
+shift
+
+echo ${@:$pos:1}

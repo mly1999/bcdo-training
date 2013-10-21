@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function cleanman {
+    man $1 | col -bp
+}
+
+if [ $# -ne 1 ]; then
+    # err
+    echo "Incorrect number of arguments" >&2
+    exit 1
+else
+    cleanman $1
+fi

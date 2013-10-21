@@ -1,0 +1,8 @@
+Notes
+ ~ man bash > bash_help.txt
+   - The txt file contains some garbage data that text editor will display incorrectly
+
+ ~ 'info bash' provides a pagable view of the man page thru the shell
+   - using the forward slash (/) allows search by keyword
+
+ ~ Search the txt file generated from 'cman bash > test_cman_bash.txt' for the exclaimation(!). Under the section "Special Parameters" of the man page for bash, $! means the following: Expands  to  the process ID of the most recently executed background (asynchronous) command. 

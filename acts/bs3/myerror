@@ -1,0 +1,7 @@
+#!/bin/bash
+
+function error {
+    echo "${0}: [${@}]"
+}
+
+error $@
