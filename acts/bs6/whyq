@@ -1,0 +1,24 @@
+#!/bin/bash
+
+## NOTES ON IMPROVEMENT
+## Update so that multiple messages can be possilbe
+##   e.g: 
+
+case $1 in
+  '' ) 
+    echo "[${1}] is the empty string"
+    ;;
+
+  *[[:space:]]* )
+    echo "[${1}] contain whitespace"
+    ;;
+
+  *[*?!\{\}\[\]]* )
+    echo "[${1}] contain globchars"
+    ;;
+
+  * )
+    echo "[${1}] is not special"
+    ;;
+
+esac

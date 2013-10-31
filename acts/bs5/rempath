@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for el in $@; do
+  # using "variable substitution"
+  echo ${el#*/}
+done

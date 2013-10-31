@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for el in $@; do
+  echo ${el%.[^/]}
+done
